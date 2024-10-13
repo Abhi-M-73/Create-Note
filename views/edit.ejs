@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <main class="min-h-screen w-full bg-zinc-900">
+
+            <form action="/edit" method="post"
+                class="flex flex-col gap-5 w-1/4 p-10">
+                <input type="text" name="previous" value="<%= filename %>"
+                    class="p-2 rounded">
+                <input type="text" name="new" placeholder="New Name"
+                    class="p-2 rounded">
+                <button type="submit"
+                    class="px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded">Update 
+                    Task</button>
+            </form>
+
+
+        </main>
+    </body>
+</html>
